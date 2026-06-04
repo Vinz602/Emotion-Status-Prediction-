@@ -4,7 +4,7 @@ import requests
 # Konfigurasi Halaman UI
 st.set_page_config(page_title="Emotion Status Prediction", page_icon="📊", layout="centered")
 
-st.title("📊 Social Media Activity - Emotion Status Prediction")
+st.title("Social Media Activity - Emotion Status Prediction")
 st.write("Masukkan metrik aktivitas dan data profil pengguna di bawah ini untuk memprediksi status emosi.")
 st.markdown("---")
 

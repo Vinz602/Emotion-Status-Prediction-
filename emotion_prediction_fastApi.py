@@ -7,7 +7,7 @@ import pandas as pd
 app = FastAPI()
 # Load the machine learning model
 pipeline = joblib.load('emotion_status_prediction_pipeline.pkl')
-le = joblib.load("artifacts/label_encoder.pkl")
+le = joblib.load("label_encoder.pkl")
 
 class emotionFeatures(BaseModel):
     age : int
