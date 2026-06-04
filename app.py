@@ -37,7 +37,7 @@ if st.button("Prediksi Status Emosi", type="primary"):
     with st.spinner("Mengirim data ke FastAPI backend..."):
         try:
             # Sesuaikan URL_API dengan endpoint FastAPI kamu
-            URL_API = "https://emotion-status-prediction-production.up.railway.app"
+            URL_API = "https://emotion-status-prediction-production.up.railway.app/predict"
             
             # Payload JSON menyertakan semua fitur numerik dan kategorikal
             # Pastikan KEY (nama string) di bawah ini SAMA PERSIS dengan nama kolom di DataFrame saat kamu training model
