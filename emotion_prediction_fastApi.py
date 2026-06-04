@@ -29,8 +29,8 @@ def predict(emotion: emotionFeatures):
     
     #model expect data sudah diencode, lakukan encoding disini juga   
     data = {
-        'Age': emotion.age,
-        'Gender': emotion.gender,
+        'Age': emotion.Age,
+        'Gender': emotion.Gender,
         'Daily_Usage_Time_minutes': emotion.Daily_Usage_Time_minutes,
         'Posts_Per_Day': emotion.Posts_Per_Day,
         'Likes_Received_Per_Day': emotion.Likes_Received_Per_Day,
