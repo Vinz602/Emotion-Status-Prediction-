@@ -45,7 +45,7 @@ if st.button("Prediksi Status Emosi", type="primary"):
                 "Gender": gender,
                 "Platform": platform,
                 "Age": age,
-                "Daily_Usage_Time (minutes)": daily_usage,
+                "Daily_Usage_Time_minutes": daily_usage,
                 "Posts_Per_Day": posts_per_day,
                 "Likes_Received_Per_Day": likes_received,
                 "Comments_Received_Per_Day": comments_received,
