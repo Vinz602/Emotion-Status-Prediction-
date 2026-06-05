@@ -10,8 +10,8 @@ pipeline = joblib.load('emotion_status_prediction_pipeline.pkl')
 le = joblib.load("label_encoder.pkl")
 
 class emotionFeatures(BaseModel):
-    Age : int
-    Gender : str
+    age : int
+    gender : str
     Daily_Usage_Time_minutes : int
     Posts_Per_Day : int
     Likes_Received_Per_Day : int
@@ -29,8 +29,8 @@ def predict(emotion: emotionFeatures):
     
     #model expect data sudah diencode, lakukan encoding disini juga   
     data = {
-        'age': emotion.age,
-        'gender': emotion.gender,
+        'Age': emotion.age,
+        'Gender': emotion.gender,
         'Daily_Usage_Time_minutes': emotion.Daily_Usage_Time_minutes,
         'Posts_Per_Day': emotion.Posts_Per_Day,
         'Likes_Received_Per_Day': emotion.Likes_Received_Per_Day,
