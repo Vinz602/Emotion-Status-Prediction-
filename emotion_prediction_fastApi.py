@@ -10,8 +10,8 @@ pipeline = joblib.load('emotion_status_prediction_pipeline.pkl')
 le = joblib.load("label_encoder.pkl")
 
 class emotionFeatures(BaseModel):
-    age : int
-    gender : str
+    Age : int
+    Gender : str
     Daily_Usage_Time_minutes : int
     Posts_Per_Day : int
     Likes_Received_Per_Day : int
