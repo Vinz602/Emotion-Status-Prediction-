@@ -57,8 +57,11 @@ if st.button("Prediksi Status Emosi", type="primary"):
             
             if response.status_code == 200:
                 hasil_json = response.json()
+    
+                # SEMENTARA: Tampilkan isi JSON asli dari FastAPI untuk melihat key yang benar
+                st.write("Debug JSON dari Backend:", hasil_json) 
                 
-                # Mengambil hasil prediksi dari FastAPI
+                # Ganti "prediction" di bawah ini sesuai dengan key yang muncul pada debug di atas
                 emosi = hasil_json.get("prediction", "Tidak Terdeteksi")
                 probabilitas = hasil_json.get("probability", None)
                 
