@@ -42,8 +42,8 @@ if st.button("Prediksi Status Emosi", type="primary"):
             # Payload JSON menyertakan semua fitur numerik dan kategorikal
             # Pastikan KEY (nama string) di bawah ini SAMA PERSIS dengan nama kolom di DataFrame saat kamu training model
             payload = {
-                "Age": age,
-                "Gender": gender,
+                "age": age,
+                "gender": gender,
                 "Daily_Usage_Time_minutes": daily_usage,
                 "Posts_Per_Day": posts_per_day,
                 "Likes_Received_Per_Day": likes_received,
