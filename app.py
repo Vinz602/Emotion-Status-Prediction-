@@ -44,6 +44,10 @@ if st.button("Prediksi Status Emosi", type="primary"):
             payload = {
                 "age": age,
                 "gender": gender,
+                
+                # Kirim versi huruf besar (untuk jaga-jaga kalau FastAPI/Model minta besar)
+                "Age": age,
+                "Gender": gender,
                 "Daily_Usage_Time_minutes": daily_usage,
                 "Posts_Per_Day": posts_per_day,
                 "Likes_Received_Per_Day": likes_received,
